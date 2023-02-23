@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Poppins1">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="Poppins2">
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+    <style name="Poppins3">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="Poppins4">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="Outfit1">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+    </style>
+    <style name="Outfit2">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+    </style>
+
+    <style name="DmSans1">
+        <item name="android:fontFamily">@font/dmsans_bold</item>
+    </style>
+
+    <style name="DmSans2">
+        <item name="android:fontFamily">@font/dmsans_regular</item>
+    </style>
+</resources>

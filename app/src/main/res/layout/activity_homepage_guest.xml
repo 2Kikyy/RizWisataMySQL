@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#031F2B"
+    tools:context=".HomepageGuest"
+    tools:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sayHello"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Hello, Tazar"
+                        android:textColor="#D6D2D2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/lets_travel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Let’s Travel"
+                        android:textColor="#D6D2D2"
+                        android:textSize="23.5sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/pp1"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/search_bar_custom1"
+                android:drawableEnd="@drawable/search_outline"
+                android:ems="10"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:hint="Temukan Informasi Liburan"
+                android:inputType="textPersonName"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#C3D9F3"
+                android:textColorHint="#A5A5A5"
+                android:textSize="16sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Forest"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="15dp"
+                        android:text="Mountains"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="15dp"
+                        android:text="Beach"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="15dp"
+                        android:text="City"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="15dp"
+                        android:text="Diving"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Popular Experiences"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="121dp"
+                        android:layout_height="176dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageButton
+                            android:id="@+id/imgSeaDiving"
+                            android:layout_width="125dp"
+                            android:layout_height="176dp"
+                            android:background="@drawable/rounded_shape"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/sea_diving" />
+
+                        <ImageView
+                            android:id="@+id/shadowSeaDiving"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            app:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/kmSeaDiving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginEnd="40dp"
+                            android:shadowColor="@color/black"
+                            android:text="11 km boat"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/titleSeaDiving"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="130dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Sea Diving"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="121dp"
+                        android:layout_height="176dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageButton
+                            android:id="@+id/imgMountainTrip"
+                            android:layout_width="125dp"
+                            android:layout_height="176dp"
+                            android:background="@drawable/rounded_shape"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/mountain_trip" />
+
+                        <ImageView
+                            android:id="@+id/shadowMountainTrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            app:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/kmMountainTrip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="150dp"
+                            android:shadowColor="@color/black"
+                            android:text="5.1 km away"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/titleMountainTrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="130dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Mountain Trip"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="121dp"
+                        android:layout_height="176dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageButton
+                            android:id="@+id/imgBeachAdv"
+                            android:layout_width="125dp"
+                            android:layout_height="176dp"
+                            android:background="@drawable/rounded_shape"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/beach_adv"
+                            tools:ignore="DuplicateIds" />
+
+                        <ImageView
+                            android:id="@+id/shadowBeachAdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            app:srcCompat="@color/black"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/kmBeachAdv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="150dp"
+                            android:shadowColor="@color/black"
+                            android:text="2 km away"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/titleBeachAdv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="130dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Beach Adventure"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Featured"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imgMountBromo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mount_bromo"
+                            android:scaleType="centerInside"
+                            android:onClick="showDetailBromo"/>
+
+                        <ImageView
+                            android:id="@+id/shadowMountBromo"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/titleMountBromo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Mount Bromo"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kmMountBromo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="5 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ratingMountBromo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="4.7"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imgRatingMountBromo"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imgWakatobiBeach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wakatobi_beach" />
+
+                        <ImageView
+                            android:id="@+id/shadowWakatobiBeach"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="60dp"
+                            android:alpha="0.3"
+                            android:hapticFeedbackEnabled="true"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/titleWakatobiBeach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Wakatobi Beach"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kmWakatobiBeach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="2000 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ratingWakatobiBeach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="4.2"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imgRatingWakatobiBeach"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mount_batur" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            android:hapticFeedbackEnabled="true"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Mount Batur"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="900 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="4.8"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/labuan_bajo" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="60dp"
+                            android:alpha="0.3"
+                            android:hapticFeedbackEnabled="true"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Labuan Bajo"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:text="500 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="4.4"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/toba_lake" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            android:hapticFeedbackEnabled="true"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Toba Lake"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:text="1000 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="4.5"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borobudur_temple" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            android:hapticFeedbackEnabled="true"
+                            tools:srcCompat="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Borobudur Temple"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:text="800 km away"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="4.6"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="16dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/star" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
